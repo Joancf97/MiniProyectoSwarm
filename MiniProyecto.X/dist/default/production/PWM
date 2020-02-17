@@ -1,0 +1,46 @@
+Microchip Technology Inc, v1.50 (A)
+
+Tool Name:
+  c:\program files\microchip\xc16\v1.50\bin\bin\..\bin/elf-ld.exe
+
+Command:
+  -p33FJ128GP802 \
+  -o \
+  dist/default/production/PWM_IC_OC.X.production.elf \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/.. \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../lib \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../support/dsPIC33C/gld \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files/microchip/xc16/v1.50/bin/bin/../../support/dsPIC33F/gld \
+  build/default/production/main.o \
+  --defsym=__MPLAB_BUILD=1 \
+  -Tp33FJ128GP802.gld.00 \
+  --stack=16 \
+  --check-sections \
+  --data-init \
+  --pack-data \
+  --handles \
+  --isr \
+  --no-gc-sections \
+  --fill-upper=0 \
+  --stackguard=16 \
+  --no-force-link \
+  --smart-io \
+  -Map=dist/default/production/PWM \
+  IC \
+  OC.X.production.map \
+  --report-mem \
+  --memorysummary \
+  dist/default/production/memoryfile.xml \
+  -start-group \
+  --library=lega-pic30-elf \
+  --library=m-elf \
+  --library=lega-c-elf \
+  -end-group \
+
+
+Optional library libp33FJ128GP802.a not found
